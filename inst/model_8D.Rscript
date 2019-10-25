@@ -1,0 +1,22 @@
+# Run the models for Hawksbill and Green sea turtles
+library(turtlewatch)
+library(dplyr)
+library(readr)
+library(dismotools)
+
+
+OBS <- turtlewatch::read_obs()
+PREDS <- turtlewatch::read_rasters()
+
+mm <- lapply(c("Green", "Hawksbill"),
+  function(species){
+    cat(species, "\n")
+    model_path <- file.path("/mnt/ecocast/projectdata/turtlewatch", "model", "8D", species)
+    models <- turtlewatch::model_8day(species,
+                                    obs = OBS,
+                                    preds = PREDS,
+                                    path = model_path)
+    dismotools::maxent_summary(models) %>%
+      readr::write_csv(file.path("/mnt/ecocast/projectdata/turtlewatch", "model", "8D",
+                                 paste0(species, "-results.csv")))
+  })

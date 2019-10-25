@@ -1,0 +1,25 @@
+Package: turtlewatch
+Title: turtlewatch
+Description: Demonstration package for TurtleWatch Egypt
+Version: 0.1
+Encoding: UTF-8
+Depends:
+    R (>= 3.0)
+Imports:
+    rlang,
+    tibble,
+    dplyr,
+    readr,
+    dismo,
+    sf,
+    leaflet,
+    raster,
+    viridisLite,
+    rasf,
+    dismotools
+Maintainer: Ben Tupper <btupper@bigelow.org>
+Author: Ben Tupper <btupper@bigelow.org>
+URL: https://github.com/BigelowLab/turtlewatch
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 6.1.1

@@ -1,0 +1,18 @@
+# make the predicitons for 2016 for each species
+
+library(turtlewatch)
+year = '2016'
+PREDS = turtlewatch::read_rasters()
+
+xx <- lapply(c("Green", "Hawksbill"),
+  function(species){
+    cat(species, "\n")
+    model_path = file.path("/mnt/ecocast/projectdata/turtlewatch", "model", "8D", species)
+    xcast_path = file.path("/mnt/ecocast/projectdata/turtlewatch", "xcast", "8D", species)
+    turtlewatch::xcast_8day(species,
+                            preds = PREDS,
+                            year = year,
+                            model_path = model_path,
+                            xcast_path = xcast_path)
+  })
+
