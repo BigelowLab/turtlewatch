@@ -47,4 +47,4 @@ Github doesn't render html output, to see the HTML output of the companion to th
 
 ### For more information
 
-For more information cantact [Dr. Nick Record] (https://www.bigelow.org/about/people/nrecord.html)
+For more information cantact [Dr. Nick Record](https://www.bigelow.org/about/people/nrecord.html)
