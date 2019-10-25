@@ -10,6 +10,8 @@ xcast_8day(species = c("Green", "Hawksbill")[1], year = "2016",
 \arguments{
 \item{species}{character, either Green or Hawksbill}
 
+\item{year}{the year to make predictions for}
+
 \item{preds}{list, a named list of predictor variables (as rasters)}
 
 \item{model_path}{character, the path for the models identified by

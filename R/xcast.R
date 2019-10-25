@@ -2,6 +2,7 @@
 #'
 #' @export
 #' @param species character, either Green or Hawksbill
+#' @param year the year to make predictions for
 #' @param preds list, a named list of predictor variables (as rasters)
 #' @param model_path character, the path for the models identified by
 #'   first doy of year for the 8-day week.

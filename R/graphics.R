@@ -4,7 +4,7 @@
 #' @param date the date to draw (note - please be in 2016)
 #' @param species character, either Green or Hawksbill
 #' @param obs sf object, of observations
-#' @param preds list, a named list of predictor variables (as rasters)
+#' @param xcast_path character, the path to the prediction rasters
 #' @return leaflet map object
 draw_woy <- function(date = "2016-01-01",
                      species = c("Green", "Hawksbill")[1],

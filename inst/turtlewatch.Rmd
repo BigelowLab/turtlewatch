@@ -11,7 +11,7 @@ suppressPackageStartupMessages(library(tidyverse))
 suppressPackageStartupMessages(library(turtlewatch))
 ```
 ```{r banner, fig.align="center", echo = FALSE }
-knitr::include_graphics("inst/turtlewatch.jpg")
+knitr::include_graphics("turtlewatch.jpg")
 ```
 
 ## Overview
@@ -77,10 +77,10 @@ The entire effort to build the model is passed on to a java application with a s
 
 `model <- dismo::maxent(presence_data, background_data, output_path)`
 
-Model output can be viewed as an [HTML](inst/model/209/maxent.html) report and it includes a variety of metrics including some graphics such as the one below.  Note that the model report also includes an assement of how much each variable contributes to the strength of the model.
+Model output can be viewed as an [HTML](model/209/maxent.html) report and it includes a variety of metrics including some graphics such as the one below.  Note that the model report also includes an assement of how much each variable contributes to the strength of the model.
 
 ```{r modelgraphcis, fig.align="center", echo = FALSE }
-knitr::include_graphics("inst/model/209/plots/species_roc.png")
+knitr::include_graphics("model/209/plots/species_roc.png")
 ```
 
 ## Prediction

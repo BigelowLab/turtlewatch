@@ -101,7 +101,7 @@ list_models <- function(path = file.path("~", "turtlewatch", "model", "Green")){
 #' @export
 #' @param paths character the paths to models (saved in subdirectories)
 #' @return list of zero or more maxent models
-read_models <- function(paths = list_models(path)){
+read_models <- function(paths = list_models()){
   lapply(paths, dismotools::read_maxent)
 }
 

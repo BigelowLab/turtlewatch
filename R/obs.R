@@ -77,8 +77,8 @@ obs_bbox <- function(x = read_obs(),
 #'
 #' @export
 #' @param x table of observations
-#' @param raster a RasterLayer or NULL
-#' @param ... extra arguments for \code{\link[leaflet]{addRasterLayer}}
+#' @param raster_layer a RasterLayer or NULL
+#' @param ... extra arguments for \code{\link[leaflet]{addRasterImage}}
 #' @return leaflet map object suitable for display
 plot_obs <- function(x = read_obs(), raster_layer = NULL, ...){
 
@@ -87,7 +87,7 @@ plot_obs <- function(x = read_obs(), raster_layer = NULL, ...){
   m <- leaflet::leaflet(data = x) %>%
     leaflet::addTiles() %>%
     leaflet::addScaleBar()
-  if (!is.null(raster_layer)) m <- m %>% leaflet::addRasterLayer(raster_layer[1], ...)
+  if (!is.null(raster_layer)) m <- m %>% leaflet::addRasterImage(raster_layer[1], ...)
 
   m %>%
     leaflet::addCircleMarkers(radius = 6,

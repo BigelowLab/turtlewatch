@@ -16,7 +16,7 @@ draw_woy(date = "2016-01-01", species = c("Green", "Hawksbill")[1],
 
 \item{obs}{sf object, of observations}
 
-\item{preds}{list, a named list of predictor variables (as rasters)}
+\item{xcast_path}{character, the path to the prediction rasters}
 }
 \value{
 leaflet map object

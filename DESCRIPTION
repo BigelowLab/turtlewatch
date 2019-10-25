@@ -1,6 +1,6 @@
 Package: turtlewatch
 Title: turtlewatch
-Description: Demonstration package for TurtleWatch Egypt
+Description: A demonstration package of ecological modeling and predicitonfor TurtleWatch Egypt.
 Version: 0.1
 Encoding: UTF-8
 Depends:
@@ -16,7 +16,8 @@ Imports:
     raster,
     viridisLite,
     rasf,
-    dismotools
+    dismotools,
+    obpgcrawler
 Maintainer: Ben Tupper <btupper@bigelow.org>
 Author: Ben Tupper <btupper@bigelow.org>
 URL: https://github.com/BigelowLab/turtlewatch

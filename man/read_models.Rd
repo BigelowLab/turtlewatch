@@ -4,7 +4,7 @@
 \alias{read_models}
 \title{Read the model directories}
 \usage{
-read_models(paths = list_models(path))
+read_models(paths = list_models())
 }
 \arguments{
 \item{paths}{character the paths to models (saved in subdirectories)}

@@ -9,9 +9,9 @@ plot_obs(x = read_obs(), raster_layer = NULL, ...)
 \arguments{
 \item{x}{table of observations}
 
-\item{...}{extra arguments for \code{\link[leaflet]{addRasterLayer}}}
+\item{raster_layer}{a RasterLayer or NULL}
 
-\item{raster}{a RasterLayer or NULL}
+\item{...}{extra arguments for \code{\link[leaflet]{addRasterImage}}}
 }
 \value{
 leaflet map object suitable for display
