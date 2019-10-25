@@ -28,11 +28,11 @@ Be sure to review the HTML summary found in the `inst` subdirectory. This best a
 
 The following packages are not on CRAN, but can be accessed on github (use [devtools](https://cran.r-project.org/package=viridisLite) for access within R.)
 
-+[rasf](https://github.com/BigelowLab/rasf)
++ [rasf](https://github.com/BigelowLab/rasf)
 
-+[obpgcrawler](https://github.com/BigelowLab/obpgcrawler)
++ [obpgcrawler](https://github.com/BigelowLab/obpgcrawler)
 
-+[dismotools](https://github.com/BigelowLab/dismotools) **Note - dismotools depends upon [Rfast](https://cran.r-project.org/package=Rfast) of which version 1.9.5 fails to install on CentOS.**
++ [dismotools](https://github.com/BigelowLab/dismotools) **Note - dismotools depends upon [Rfast](https://cran.r-project.org/package=Rfast) of which version 1.9.5 fails to install on CentOS.**
     
 ### Installation
 
