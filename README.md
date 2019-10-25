@@ -26,7 +26,7 @@ Be sure to review the HTML summary found in the `inst` subdirectory. This best a
 
 + [viridisLite](https://cran.r-project.org/package=viridisLite)
 
-The following packages are not on CRAN, but can be accessed on github (use [devtools](https://cran.r-project.org/package=viridisLite) for access within R.)
+The following packages are not on CRAN, but can be accessed on github (use [devtools](https://cran.r-project.org/package=devtools) for access within R.)
 
 + [rasf](https://github.com/BigelowLab/rasf)
 
