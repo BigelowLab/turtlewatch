@@ -30,9 +30,8 @@ draw_woy <- function(date = "2016-01-01",
     dplyr::arrange(date)
 
   dr <- format(pts$date[c(1,nrow(pts))], "%Y-%m-%d")
-  cat(sprintf("%s %s", dr[1], dr[2]), "\n")
 
-  m <- leaflet::leaflet() %>%
+  m <- leaflet::leaflet(width= "100%") %>%
     leaflet::addTiles() %>%
     leaflet::addRasterImage(r, colors = pal, opacity = 0.7) %>%
     leaflet::addLegend("bottomleft",
